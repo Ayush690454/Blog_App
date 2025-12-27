@@ -1,0 +1,10 @@
+<h1><%= @post.title %></h1>
+
+<div class="post">
+  <p><%= @post.content %></p>
+  <small>Created <%= time_ago_in_words(@post.created_at) %> ago</small>
+</div>
+
+<br>
+
+<%= link_to "← Back", root_path %>
